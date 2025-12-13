@@ -16,7 +16,7 @@ st.write("Upload a chest X-ray image. The model predicts: COVID or Normal.")
 # Model download settings (Google Drive)
 # =========================================================
 DRIVE_FILE_ID = "18zNPnB62-DvJAddb7mcVcV_A2WT0Awr7"   # ✅ your model file id
-MODEL_PATH = "covid_model.keras"
+MODEL_PATH = "covid_cnn_model.keras"
 
 # ⚠️ IMPORTANT: Must match your training order (train_ds.class_names)
 # If your Colab printed: ['COVID','Normal'] keep it as below.
@@ -111,3 +111,4 @@ if uploaded is not None:
         st.warning("⚠️ Low confidence prediction. Try a clearer X-ray image or different view.")
 
 st.warning("Educational use only — not a clinical diagnosis tool.")
+
