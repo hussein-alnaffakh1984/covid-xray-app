@@ -45,4 +45,9 @@ model = load_model_cached()
 st.caption(f"Class mapping: 0 → {CLASS_NAMES[0]} | 1 → {CLASS_NAMES[1]}")
 min_conf = st.slider("Minimum confidence to accept prediction (%)", 50, 99, 80, 1)
 
-uploaded = st.file_uploader("Upload chest X-ray image", type=["
+uploaded = st.file_uploader(
+    "Upload chest X-ray image",
+    type=["png", "jpg", "jpeg"]
+)
+
+
