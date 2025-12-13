@@ -19,8 +19,8 @@ st.write("Upload a chest X-ray image. The model predicts: COVID or Normal.")
 # -------------------------------------------------
 # MODEL SETTINGS (مطابقة 100% لـ Colab)
 # -------------------------------------------------
-DRIVE_FILE_ID = "15GpcUSNtMf1Hy83nbzrptL-WyBboyy_l"
-MODEL_PATH = "covid_mobilenetv2_model.keras"
+DRIVE_FILE_ID = "1ffyT6-lb19VUCbGCal0eN_qeNGZz9KR4"
+MODEL_PATH = "covid_mobilenetv2_infer.keras"   # أو نفس اسم الملف الذي رفعته بالضبط
 
 # ⚠️ هذا الترتيب يجب أن يطابق train_ds.class_names
 CLASS_NAMES = ["COVID", "Normal"]  # label 0, label 1
@@ -101,3 +101,4 @@ if uploaded is not None:
     st.write(f"- P(Normal): {p_label1:.4f}")
 
 st.warning("⚠️ Educational use only — not a clinical diagnostic tool.")
+
