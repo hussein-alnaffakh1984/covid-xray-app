@@ -1,5 +1,5 @@
 streamlit
-tensorflow==2.19.0
+tflite-runtime
 numpy
 pillow
-gdown
+requests
